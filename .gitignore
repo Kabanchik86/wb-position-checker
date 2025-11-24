@@ -1,0 +1,27 @@
+# Локальные конфигурации
+credentials.json
+
+# Локальные Excel-файлы
+pants_position_words.xlsx
+shorts_position_words.xlsx
+
+# Кэш и временные файлы Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальные окружения
+venv/
+env/
+
+# Логи
+*.log
+
+# IDE (PyCharm, VSCode)
+.idea/
+.vscode/
+
+# OS файлы
+.DS_Store
+Thumbs.db
