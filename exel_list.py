@@ -9,7 +9,7 @@ client = gspread.authorize(creds) #Авторизуемся в gspread
 sheet_id = '1UmZ6CD6xN5Rbt9DaEE2vZEqM1QTL0gjghEAiCo4ac-A' #Указываем ID твоей таблицы
 workbook = client.open_by_key(sheet_id) #Открываем саму таблицу
 
-sheet = workbook.worksheet('Лист1')
+sheet = workbook.worksheet('Лист2')
 
 def write_to_sheet_1(position):
     header_row = sheet.row_values(1)

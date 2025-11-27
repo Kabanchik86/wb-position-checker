@@ -1,5 +1,4 @@
 import requests
-from openpyxl import load_workbook
 from exel_list import write_to_sheet_1, sheet
 
 arr = []
@@ -14,11 +13,7 @@ def find_item(response, id_articul: int):
 
 def get_resp():
 
-    # Открываем файл
-    #wb = load_workbook("shorts_position_words.xlsx")
-
     # Выбираем активный лист
-    #ws = wb.active
     exel = sheet.col_values(1)
     # Считываем данные из столбца J (10-й столбец)
     #keywords = [cell.value for cell in ws["A"] if cell.value is not None]
@@ -88,7 +83,7 @@ def get_resp():
 
 
             #if len(response.json()) != 0:
-            result = find_item(response, id_articul=259711529) #259711529 78035685
+            result = find_item(response, id_articul=78035685) #259711529 78035685
             if result:
                 arr.append(str((page - 1) * 100 + result))
                 break
